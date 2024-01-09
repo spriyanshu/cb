@@ -2,7 +2,7 @@ import React from 'react';
 
 const Courses = () => {
     return (
-        <section className="pt-10 py-10 sm:py-16 lg:py-24 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16">
+        <section id="courses" className="pt-10 py-10 sm:py-16 lg:py-24 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16">
             <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:items-stretch md:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-10">
                     <div className="flex flex-col justify-between lg:py-5">

@@ -11,7 +11,9 @@ import Footer from '../../components/Footer'
 
 function Home() {
     return (
-        <><Header /><Hero />
+        <>
+            <Header />
+            <Hero />
             <Courses />
             <ClassSection />
             <Roadmap />

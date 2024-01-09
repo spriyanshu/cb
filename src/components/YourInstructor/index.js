@@ -8,7 +8,7 @@ const statItems = [
 
 const InstructorSection = () => {
     return (
-        <section className="pt-10 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16">
+        <section id="mentors" className="pt-10 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16">
             <div className="max-w-2xl mx-auto text-center">
                 <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Know Your Instructor</h2>
             </div>

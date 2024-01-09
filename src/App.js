@@ -1,11 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './pages/Home';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Sigin from './pages/Signin';
 
 export default function App() {
   return (
-    <Home />
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path='' element={<Home />} />
+          <Route path='/signin' element={<Sigin />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   )
 }
 // "/ for home"
