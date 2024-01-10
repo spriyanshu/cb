@@ -5,8 +5,8 @@ const Courses = () => {
         <section id="courses" className="pt-10 py-10 sm:py-16 lg:py-24 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16">
             <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:items-stretch md:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-10">
-                    <div className="flex flex-col justify-between lg:py-5">
-                        <h2 className="text-3xl font-bold leading-tight text-gray-800 sm:text-4xl lg:leading-tight lg:text-5xl">Join <span className="text-red-600">Live.</span> And Unlock Your Data Science Journey</h2>
+                    <div className="flex flex-col justify-between  mx-6 lg:py-5">
+                        <h2 className="text-3xl font-bold leading-tight text-gray-800 sm:text-4xl lg:leading-tight lg:text-5xl">Join <span className="text-red-600">Live.🚀</span> And Unlock Your Data Science Journey  </h2>
 
                         <div className="mt-auto">
                             <div className="flex items-center">
@@ -18,7 +18,7 @@ const Courses = () => {
                             </div>
 
                             <blockquote className="mt-6">
-                                <p className="text-lg leading-relaxed text-gray-800">The heart of CraftingBrain lies in the expertise of our faculty. Our instructors are industry leaders, drawn from the top echelons of world-renowned EdTech companies. They've transformed the careers of over a thousand students, bringing real-world experience into the virtual classroom.</p>
+                                <p className="text-lg text-justify  leading-relaxed text-gray-800">The heart of CraftingBrain lies in the expertise of our faculty. Our instructors are industry leaders, drawn from the top echelons of world-renowned EdTech companies. They've transformed the careers of over a thousand students, bringing real-world experience into the virtual classroom.</p>
                             </blockquote>
 
                             <div className="flex items-center mt-8">
