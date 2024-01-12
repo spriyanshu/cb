@@ -25,7 +25,6 @@ const ClassPricing = ({ type, features }) => (
                 )}
             </p>
 
-            <p className="mt-2 text-base text-gray-600">Per month</p>
 
             <ul className="flex flex-col mt-8 space-y-4">
                 {features.map((feature, index) => (
@@ -41,30 +40,30 @@ const ClassPricing = ({ type, features }) => (
                 Enroll now
             </a>
 
-            <p className="mt-5 text-sm text-gray-500">No Credit Card Required</p>
+            <p className="mt-5 text-sm text-gray-500">7 Days Moneyback Guarantee</p>
         </div>
     </div>
 );
 
 const ClassSection = () => {
     const onlineFeatures = [
-        { text: 'Unlimited Domain License' },
-        { text: 'Full Celebration Library' },
-        { text: '120+ Coded Blocks' },
-        { text: 'Design Files Included' },
-        { text: 'Premium Support' },
+        { text: '6-Month Live classes' },
+        { text: 'Expert-led Sessions and Hands-on Projects' },
+        { text: 'Flexible Online Learning Experiences' },
+        { text: 'Real-world Internship with AI Home Automation Company' },
+        { text: 'session recording' },
     ];
 
     const offlineFeatures = [
-        { text: 'Unlimited Domain License' },
-        { text: 'Full Celebration Library' },
-        { text: '120+ Coded Blocks' },
-        { text: 'Design Files Included' },
-        { text: 'Premium Support' },
+        { text: '6-Month Live classes' },
+        { text: 'Expert-led Sessions and Hands-on Projects' },
+        { text: 'Flexible Online Learning Experiences' },
+        { text: 'Real-world Internship with AI Home Automation Company' },
+        { text: 'session recording' },
     ];
 
     return (
-        <section id="features"  className="py-10 bg-gray-50 sm:py-16 lg:py-24">
+        <section id="features" className="py-10 bg-gray-50 sm:py-16 lg:py-24">
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div className="max-w-2xl mx-auto text-center">
                     <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const StepItem = ({ icon, title, description, isLast }) => (
-    <li className="relative flex items-start">
+    <li className="relative flex items-start ">
         {icon && !isLast && (
             <div className="-ml-0.5 absolute mt-0.5 top-14 left-8 w-px border-l-4 border-dotted border-gray-300 h-full" aria-hidden="true"></div>
         )}
@@ -60,14 +60,14 @@ const Roadmap = () => {
     ];
 
     return (
-        <section className="py-10 bg-gray-100 sm:py-16 lg:py-24">
+        <section className="py-10 px-10 bg-gray-100 sm:py-16 lg:py-24">
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div className="max-w-2xl mx-auto text-center">
-                    <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+                    <h2 className="text-2xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
                         How do we create <span className="text-green-700"> Success</span>
                     </h2>
                     <p className="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.
+                        The Role of Persistence in Succes
                     </p>
                 </div>
 
