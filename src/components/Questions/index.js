@@ -38,15 +38,35 @@ const FaqItem = ({ faqNumber, question, answer }) => {
 const FaqSection = () => {
     const faqs = [
         {
-            question: '1 How long does it take to deliver the first blog post?',
-            answer:
-                'It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post.',
-        }, {
-            question: '2 How long does it take to deliver the first blog post?',
-            answer:
-                'It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post.',
+            question: "Do I need to know Java to Join this program?",
+            answer: "No, we will start from the basics. Even if you never coded a single line, you will be able to understand everything and become interview ready for your dream companies like Google, Microsoft, Amazon. All you need to do is be consistent.",
+        },
+        {
+            question: "What are the timings? Can I do this course with my college class or job?",
+            answer: "Yes, you can. We will have 3 classes a week, and the timing of the classes is 9 PM. So your college class or job won’t be a problem.",
+        },
+        {
+            question: "I am from a non-CSE branch. Can I take this course and crack my dream company?",
+            answer: "One of our instructors is from a mechanical background and is working with Google India as SWE 2. Yes, you will be prepared for the interview with any company after completing this course.",
+        },
+        {
+            question: "Will this course be taught in Hindi or English?",
+            answer: "You will get the recorded part in both Hindi as well as English (LevelUp will be in English only). If you choose DSA Elite, then the live classes will be in Hindi.",
+        },
+        {
+            question: "Do I need a computer for this course?",
+            answer: "It is tough to do coding on any device other than a laptop. Yes, you are required to have a decent laptop/computer with an internet connection.",
+        },
+        {
+            question: "What is the duration of this program?",
+            answer: "The course duration is 7-8 months. You can start your interviews after 60 days as we will be done with the first iteration of DSA. The rest of the time is for practicing DSA and Core Subjects if you missed that in college.",
+        },
+        {
+            question: "How long is the course access?",
+            answer: "You will have access to the course for 2 years from the start of the course.",
         },
     ];
+    
 
     return (
         <section className="relative z-20 overflow-hidden bg-white pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
@@ -67,12 +87,12 @@ const FaqSection = () => {
                 </div>
                 <div className="flex flex-wrap -mx-4">
                     <div className="w-full px-4 lg:w-1/2">
-                        {faqs.map((faq, index) => (
+                        {faqs.filter(function (_,number) {return number % 2 === 0;}).map((faq, index) => (
                             <FaqItem key={index} faqNumber={index + 1} {...faq} />
                         ))}
                     </div>
                     <div className="w-full px-4 lg:w-1/2">
-                        {faqs.map((faq, index) => (
+                        {faqs.filter(function (_,number) {return number % 2 !== 0;}).map((faq, index) => (
                             <FaqItem key={index} faqNumber={index + 1} {...faq} />
                         ))}
                     </div>
