@@ -19,45 +19,140 @@ const StepItem = ({ icon, title, description, isLast }) => (
     </li>
 );
 
+// let RoadmapList = []
+
 const Roadmap = () => {
     const steps = [
         {
             icon: (
-                <svg className="w-10 h-10 text-fuchsia-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                <svg className=" text-fuchsia-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="45" height="45" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M8 14s1.5 1.5 4 1.5s4-1.5 4-1.5" />
+                    <path d="M9.5 3l-2 4h11l-2-4" />
                 </svg>
+
             ),
-            title: 'Data Science',
-            description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.',
+            title: 'Engaging Curriculum Design',
+            description: 'Craft a comprehensive and industry-relevant curriculum that covers a wide range of data science technologies over the six-month period.',
         },
         {
             icon: (
-                <svg className="w-10 h-10 text-fuchsia-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
+                <svg className=" text-fuchsia-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="45" height="45" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 6v4l3-3M12 18v-4l3 3M6 12h4l-3-3M18 12h-4l3 3" />
+              </svg>
+              
             ),
-            title: 'Practice Session',
-            description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.',
+            title: 'Interactive Online Sessions',
+            description: 'Prioritize live sessions with a duration of 3.5 hours daily to enhance student-teacher interaction and foster a collaborative learning environment.',
         },
         {
             icon: (
-                <svg className="w-10 h-10 text-fuchsia-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+                <svg className="text-fuchsia-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="45" height="45" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M8 12h8M12 8v8M7 7l10 10M17 7L7 17" />
                 </svg>
             ),
-            title: '10+ Real Life projects',
-            description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.',
+            title: 'Focus on Peer Learning',
+            description: 'Encourage peer-to-peer sessions to promote knowledge sharing, collaboration, and a sense of community among students.',
         },
         {
             icon: (
-                <svg className="w-10 h-10 text-fuchsia-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                <svg className=" text-fuchsia-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="45" height="45" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="4" y="4" width="16" height="16" rx="2" ry="2" />
+                    <line x1="12" y1="2" x2="12" y2="22" />
+                    <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+                    <line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
                 </svg>
+
             ),
-            title: '6 month Internship Certificate',
-            description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.',
+            title: 'Regular Evaluations',
+            description: 'Implement weekly evaluations to track student progress, identify areas for improvement, and provide timely feedback for continuous learning.',
         },
-    ];
+        // {
+        //     icon: (
+        //         <svg className=" text-fuchsia-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="45" height="45" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+        //             <rect x="4" y="4" width="16" height="16" rx="2" ry="2" />
+        //             <circle cx="12" cy="12" r="3" />
+        //             <line x1="12" y1="15" x2="12" y2="18" />
+        //             <line x1="15" y1="12" x2="18" y2="12" />
+        //             <line x1="12" y1="9" x2="12" y2="6" />
+        //             <line x1="9" y1="12" x2="6" y2="12" />
+        //         </svg>
+        //     ),
+        //     title: 'Mock Assessments',
+        //     description: 'Conduct regular mock assessments to simulate real-world scenarios, helping students apply their knowledge and build confidence.',
+        // },
+        {
+            icon: (
+                <svg className=" text-fuchsia-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="45" height="45" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="4" y="4" width="16" height="16" rx="2" ry="2" />
+                    <line x1="12" y1="2" x2="12" y2="22" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="8" y1="16" x2="16" y2="16" />
+                    <line x1="8" y1="8" x2="16" y2="8" />
+                </svg>
+              
+            ),
+            title: 'Internship Opportunities',
+            description: 'Establish partnerships with AI automation companies to provide valuable internship opportunities, enabling students to gain practical experience in the data science domain.',
+        },
+        {
+            icon: (
+                <svg className=" text-fuchsia-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="45" height="45" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2" />
+                <line x1="4" y1="14" x2="20" y2="14" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+                <line x1="10" y1="4" x2="10" y2="12" />
+                <line x1="14" y1="4" x2="14" y2="12" />
+              </svg>
+              
+            ),
+            title: 'Certification and Experience Letter',
+            description: 'Issue course certifications upon successful completion and provide a formal experience letter documenting the six months of hands-on experience in data science.',
+        },
+        // {
+        //     icon: (
+        //         <svg className=" text-fuchsia-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="45" height="45" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+        //             <circle cx="12" cy="12" r="10" />
+        //             <rect x="3" y="10" width="18" height="4" />
+        //             <line x1="12" y1="18" x2="12" y2="22" />
+        //             <line x1="8" y1="14" x2="8" y2="18" />
+        //             <line x1="16" y1="14" x2="16" y2="18" />
+        //         </svg>
+
+        //     ),
+        //     title: 'Online Platform Optimization',
+        //     description: 'Ensure a user-friendly and efficient online learning platform that supports seamless navigation, resource access, and live session participation.',
+        // },
+        {
+            icon: (
+                <svg className=" text-fuchsia-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="45" height="45" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" y1="6" x2="12" y2="18" />
+                    <line x1="6" y1="12" x2="18" y2="12" />
+                </svg>
+
+                ),
+                title: 'Emphasize Interaction',
+                description: 'Foster a culture of engagement through discussion forums, Q&A sessions, and collaborative projects to enhance the overall learning experience.',
+            },
+            {
+                icon: (
+                    <svg className=" text-fuchsia-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="45" height="45" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                        <line x1="12" y1="22" x2="12" y2="12" />
+                        <line x1="2" y1="7" x2="12" y2="12" />
+                        <line x1="22" y1="7" x2="12" y2="12" />
+                    </svg>
+                  
+                ),
+                title: 'Performance Incentives',
+                description: 'Motivate students by offering compensation of up to $10,000 for top performers, recognizing and rewarding their dedication and achievements throughout the course.',
+            },
+        ];
+    
+    
 
     return (
         <section className="py-10 px-10 bg-gray-100 sm:py-16 lg:py-24">

@@ -10,9 +10,9 @@ const ClassFeature = ({ text }) => (
 );
 
 const ClassPricing = ({ type, features }) => (
-    <div className={`bg-white border-4 ${type === 'online' ? 'border-transparent' : 'border-blue-600'} rounded-md`}>
+    <div className={`bg-white border-4 ${type === 'offline' ? 'border-transparent' : 'border-blue-600'} rounded-md`}>
         <div className="p-6 md:py-10 md:px-9">
-            <div className={`inline-block px-4 py-2 ${type === 'online' ? 'bg-green-100' : 'bg-blue-100'} rounded-full`}>
+            <div className={`inline-block px-4 py-2 ${type === 'offline' ? 'bg-green-100' : 'bg-blue-100'} rounded-full`}>
                 <h3 className="text-sm font-semibold">{type}</h3>
             </div>
             <p className="mt-5 text-5xl font-bold text-black">
@@ -21,7 +21,9 @@ const ClassPricing = ({ type, features }) => (
                         Online+ <span className="text-red-600">Live</span>
                     </>
                 ) : (
-                    'Offline'
+                    <>
+                        Offline
+                    </>
                 )}
             </p>
 
@@ -32,13 +34,22 @@ const ClassPricing = ({ type, features }) => (
                 ))}
             </ul>
 
-            <a
-                href="#"
-                className="inline-flex items-center justify-center w-full px-4 py-4 mt-8 font-semibold text-white transition-all duration-200 rounded-md bg-gradient-to-r from-fuchsia-600 to-blue-600 hover:opacity-80 focus:opacity-80"
-                role="button"
-            >
-                Enroll now
-            </a>
+ 
+            {type === 'online' ? (
+                    <>
+                    <a href="#" className="inline-flex items-center justify-center w-full px-4 py-4 mt-8 font-semibold text-white transition-all duration-200 rounded-md bg-gradient-to-r from-fuchsia-600 to-blue-600 hover:opacity-80 focus:opacity-80" role="button"> 
+                        Enroll Now
+                    </a>
+                    </>
+                ) : (
+                    <>
+                    <a href="#" className="inline-flex items-center justify-center w-full px-4 py-4 mt-8 font-semibold text-white transition-all duration-200 rounded-md bg-gradient-to-r from-fuchsia-600 to-blue-600 hover:opacity-80 focus:opacity-80" role="button"> 
+                        Available Soon
+                    </a>
+                    </>
+                )}
+            
+                
 
             <p className="mt-5 text-sm text-gray-500">7 Days Moneyback Guarantee</p>
         </div>

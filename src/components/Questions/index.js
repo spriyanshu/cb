@@ -38,20 +38,20 @@ const FaqItem = ({ faqNumber, question, answer }) => {
 const FaqSection = () => {
     const faqs = [
         {
-            question: "Do I need to know Java to Join this program?",
+            question: "Do I need to know Python to Join this program?",
             answer: "No, we will start from the basics. Even if you never coded a single line, you will be able to understand everything and become interview ready for your dream companies like Google, Microsoft, Amazon. All you need to do is be consistent.",
         },
         {
             question: "What are the timings? Can I do this course with my college class or job?",
-            answer: "Yes, you can. We will have 3 classes a week, and the timing of the classes is 9 PM. So your college class or job won’t be a problem.",
+            answer: "Yes, you can. We will have 5 classes a week, and the timing of the classes is adjustable your collage and job timing. So your college class or job won’t be a problem.",
         },
         {
             question: "I am from a non-CSE branch. Can I take this course and crack my dream company?",
-            answer: "One of our instructors is from a mechanical background and is working with Google India as SWE 2. Yes, you will be prepared for the interview with any company after completing this course.",
+            answer: "Yes, you can pursue a data science course and aim to transition into a data science role even if you're from a non-Computer Science and Engineering background. Success will depend on your commitment, effort, supplemental learning, networking, problem-solving skills, and adaptability. Many individuals from diverse backgrounds have successfully entered the field by showcasing relevant skills and gaining practical experience.",
         },
         {
             question: "Will this course be taught in Hindi or English?",
-            answer: "You will get the recorded part in both Hindi as well as English (LevelUp will be in English only). If you choose DSA Elite, then the live classes will be in Hindi.",
+            answer: "In both",
         },
         {
             question: "Do I need a computer for this course?",
@@ -59,11 +59,11 @@ const FaqSection = () => {
         },
         {
             question: "What is the duration of this program?",
-            answer: "The course duration is 7-8 months. You can start your interviews after 60 days as we will be done with the first iteration of DSA. The rest of the time is for practicing DSA and Core Subjects if you missed that in college.",
+            answer: "The course duration is 6-7 months. You can start your interviews after 90 days as we will be done with the first iteration of course.",
         },
         {
             question: "How long is the course access?",
-            answer: "You will have access to the course for 2 years from the start of the course.",
+            answer: "You will have access to the course for 9 months from the start of the course.",
         },
     ];
     
