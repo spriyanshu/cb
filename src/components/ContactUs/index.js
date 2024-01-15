@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactSection = () => {
     const contactUsDetail = ""
-    const location = "T/512 cuber complex, Banjara Hills Hyderabad Telangana India"
+    const location = "T/512 kuber complex, Banjara Hills Hyderabad Telangana India"
     const phoneNumber = "(+91) 93050 09726"
     const email = "contact@craftingbrain.com"
     return (
