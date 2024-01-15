@@ -12,7 +12,7 @@ const Hero = () => {
                     </div>
 
                     <div>
-                        <img className="w-full" src="https://www.algoprep.in/img/hero-img.png" alt="" />
+                        <img className="w-full" src="/1.png" alt="" />
                     </div>
                 </div>
             </div>
