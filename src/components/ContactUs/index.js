@@ -2,9 +2,9 @@ import React from 'react';
 
 const ContactSection = () => {
     const contactUsDetail = ""
-    const location = "chatori gali"
-    const phoneNumber = "(+91) 884097938"
-    const email = "bydefaultcoder@gmail.com"
+    const location = "T/512 cuber complex, Banjara Hills Hyderabad Telangana India"
+    const phoneNumber = "(+91) 93050 09726"
+    const email = "contact@craftingbrain.com"
     return (
         <section id="contacts" className="relative z-10 overflow-hidden bg-white py-20 lg:py-[120px]">
             <div className="container mx-auto  px-8 py-8">

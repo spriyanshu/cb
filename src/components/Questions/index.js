@@ -4,7 +4,7 @@ const FaqItem = ({ faqNumber, question, answer }) => {
     const [isOpen, setOpen] = useState(false);
 
     return (
-        <div className="w-full p-4 mb-8 bg-white rounded-lg shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] dark:bg-dark-2 sm:p-8 lg:px-6 xl:px-8">
+        <div id="FAQs" className="w-full p-4 mb-8 bg-white rounded-lg shadow-[0px_20px_95px_0px_rgba(201,203,204,0.30)] dark:shadow-[0px_20px_95px_0px_rgba(0,0,0,0.30)] dark:bg-dark-2 sm:p-8 lg:px-6 xl:px-8">
             <button
                 className="flex w-full text-left faq-btn"
                 onClick={() => setOpen((prev) => !prev)}
@@ -38,7 +38,7 @@ const FaqItem = ({ faqNumber, question, answer }) => {
 const FaqSection = () => {
     const faqs = [
         {
-            question: "Do I need to know Java to Join this program?",
+            question: "Do I need to know Python to Join this program?",
             answer: "No, we will start from the basics. Even if you never coded a single line, you will be able to understand everything and become interview ready for your dream companies like Google, Microsoft, Amazon. All you need to do is be consistent.",
         },
         {
@@ -66,7 +66,7 @@ const FaqSection = () => {
             answer: "You will have access to the course for 2 years from the start of the course.",
         },
     ];
-    
+
 
     return (
         <section className="relative z-20 overflow-hidden bg-white pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
@@ -87,12 +87,12 @@ const FaqSection = () => {
                 </div>
                 <div className="flex flex-wrap -mx-4">
                     <div className="w-full px-4 lg:w-1/2">
-                        {faqs.filter(function (_,number) {return number % 2 === 0;}).map((faq, index) => (
+                        {faqs.filter(function (_, number) { return number % 2 === 0; }).map((faq, index) => (
                             <FaqItem key={index} faqNumber={index + 1} {...faq} />
                         ))}
                     </div>
                     <div className="w-full px-4 lg:w-1/2">
-                        {faqs.filter(function (_,number) {return number % 2 !== 0;}).map((faq, index) => (
+                        {faqs.filter(function (_, number) { return number % 2 !== 0; }).map((faq, index) => (
                             <FaqItem key={index} faqNumber={index + 1} {...faq} />
                         ))}
                     </div>

@@ -15,12 +15,17 @@ const Header = () => {
 
     return (
         <div className="relative font-sans">
-            <nav className="relative px-4 sm:px-2 md:px-2 lg:px-8 xl:px-24 2xl:px-64 py-3 sm:py-2 md:py-4 lg:py-4 xl:py-6 2xl:py-6 flex justify-between items-center bg-[#FCF8F1] bg-opacity-30">
+            <nav className="relative  px-4 sm:px-2 md:px-2 lg:px-8 xl:px-24 2xl:px-64 py-3 sm:py-2 md:py-4 lg:py-4 xl:py-6 2xl:py-6 flex justify-between items-center bg-[#FCF8F1] bg-opacity-30">
+                <img
+                    src="cblogo.png"
+                    alt="Logo"
+                    className="h-12 "
+                />
 
-                <Link to="/" className="flex text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl font-extrabold uppercase">
+                {/* <Link to="/" className="flex text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl font-extrabold uppercase">
                     crafting
                     <span className="text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl font-extrabold uppercase text-red-600">brain</span>
-                </Link>
+                </Link> */}
 
                 <div className="lg:hidden">
                     <button
@@ -45,14 +50,19 @@ const Header = () => {
                 {/* Mobile Menu */}
                 <div className={`navbar-menu ${isMenuVisible ? 'transition-all duration-300 ease-in' : 'transition-all duration-300 ease-out hidden'}`}>
                     <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25" onClick={closeMenu}></div>
-                    <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                    <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-3 px-4 bg-white border-r overflow-y-auto">
                         <div className="flex items-center mb-8">
-                            <Link to="/" className="flex text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl font-extrabold uppercase">
+                            {/* <Link to="/" className="flex text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl font-extrabold uppercase">
                                 crafting <span className="text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl font-extrabold uppercase text-red-600	">brain </span>
-                            </Link>
-                            <button className="navbar-close ml-2" onClick={closeMenu}>
+                            </Link> */}
+                            <img
+                                src="cblogo.png"
+                                alt="Logo"
+                                className="h-12 "
+                            />
+                            <button className="navbar-close ml-16" onClick={closeMenu}>
                                 <svg
-                                    className="h-6 w-6 text-gray-600 cursor-pointer hover:text-gray-600 stroke-2"
+                                    className="h-6 w-6 text-gray-600 cursor-pointer hover:text-gray-600 stroke-4"
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
                                     viewBox="0 0 24 24"
