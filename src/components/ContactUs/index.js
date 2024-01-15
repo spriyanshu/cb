@@ -1,6 +1,10 @@
 import React from 'react';
 
 const ContactSection = () => {
+    const contactUsDetail = ""
+    const location = "chatori gali"
+    const phoneNumber = "(+91) 884097938"
+    const email = "bydefaultcoder@gmail.com"
     return (
         <section id="contacts" className="relative z-10 overflow-hidden bg-white py-20 lg:py-[120px]">
             <div className="container mx-auto  px-8 py-8">
@@ -11,9 +15,7 @@ const ContactSection = () => {
                                 Contact US
                             </h2>
                             <p className="text-base leading-relaxed text-body-color dark:text-dark-6 mb-9">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                adiqua minim veniam quis nostrud exercitation ullamco
+                                {contactUsDetail}
                             </p>
                             <div className="mb-8 flex w-full max-w-[370px]">
                                 <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
@@ -27,7 +29,7 @@ const ContactSection = () => {
                                         Our Location
                                     </h4>
                                     <p className="text-base text-body-color dark:text-dark-6">
-                                        99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                                        {location}
                                     </p>
                                 </div>
                             </div>
@@ -51,7 +53,7 @@ const ContactSection = () => {
                                         Phone Number
                                     </h4>
                                     <p class="text-base text-body-color dark:text-dark-6">
-                                        (+62)81 414 257 9980
+                                        {phoneNumber}
                                     </p>
                                 </div>
                             </div>
@@ -66,7 +68,7 @@ const ContactSection = () => {
                                         Email Address
                                     </h4>
                                     <p class="text-base text-body-color dark:text-dark-6">
-                                        info@yourdomain.com
+                                        {email}
                                     </p>
                                 </div>
                             </div>
