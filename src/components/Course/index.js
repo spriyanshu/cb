@@ -1,6 +1,15 @@
 import React from 'react';
 
 const Courses = () => {
+    const handleDownload = () => {
+        const pdfPath = process.env.PUBLIC_URL + '/curriculum.pdf';
+        const link = document.createElement('a');
+        link.href = pdfPath;
+        link.download = 'curriculum.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
     return (
         <section id="courses" className="pt-10 py-10 sm:py-16 lg:py-24 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16">
             <div className="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
@@ -74,6 +83,7 @@ const Courses = () => {
                                     </li>
                                 </ul>
 
+                                <a href="#" title="" className="inline-flex items-center justify-center w-full px-8 py-4 mt-10 font-semibold text-white transition-all duration-200 rounded-full bg-gradient-to-r from-blue-600 to-fuchsia-600 hover:opacity-80 focus:opacity-80" role="button" onClick={handleDownload} > DOWNLOAD CURRICULUM </a>
                                 <a href="#" title="" className="inline-flex items-center justify-center w-full px-8 py-4 mt-10 font-semibold text-white transition-all duration-200 rounded-full bg-gradient-to-r from-fuchsia-600 to-blue-600 hover:opacity-80 focus:opacity-80" role="button"> Enroll Now </a>
 
                                 <div className="flex items-center mt-5">
