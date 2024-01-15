@@ -25,7 +25,7 @@ const ContactSection = () => {
                                     </svg>
                                 </div>
                                 <div className="w-full">
-                                    <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                                    <h4 className="mb-1 text-xl font-bold text-dark">
                                         Our Location
                                     </h4>
                                     <p className="text-base text-body-color dark:text-dark-6">
@@ -49,7 +49,7 @@ const ContactSection = () => {
                                     </svg>
                                 </div>
                                 <div class="w-full">
-                                    <h4 class="mb-1 text-xl font-bold text-dark dark:text-white">
+                                    <h4 class="mb-1 text-xl font-bold text-dark">
                                         Phone Number
                                     </h4>
                                     <p class="text-base text-body-color dark:text-dark-6">
@@ -64,7 +64,7 @@ const ContactSection = () => {
                                     </svg>
                                 </div>
                                 <div class="w-full">
-                                    <h4 class="mb-1 text-xl font-bold text-dark dark:text-white">
+                                    <h4 class="mb-1 text-xl font-bold text-dark">
                                         Email Address
                                     </h4>
                                     <p class="text-base text-body-color dark:text-dark-6">
@@ -77,7 +77,7 @@ const ContactSection = () => {
                     </div>
                     <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
                         <div class="relative p-8 bg-white rounded-lg shadow-lg  sm:p-12">
-                            <form>
+                            <form action="https://formsubmit.co/contact@craftingbrain.com" method="POST" >
                                 <div class="mb-6">
                                     <input type="text" placeholder="Your Name" class="border-stroke  text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none" />
                                 </div>
