@@ -3,8 +3,8 @@ import React from 'react';
 const Courses = () => {
     return (
         <section id="courses" className="pt-10 py-10 sm:py-16 lg:py-24 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16">
-            <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:items-stretch md:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-10">
+            <div className="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 md:items-stretch md:grid-cols-2 gap-x-12 lg:gap-x-80 gap-y-10">
                     <div className="flex flex-col justify-between  mx-6 lg:py-5">
                         <h2 className="text-3xl font-bold leading-tight text-gray-800 sm:text-4xl lg:leading-tight lg:text-5xl">Join <span className="text-red-600">Live.🚀</span> And Unlock Your Data Science Journey  </h2>
 
