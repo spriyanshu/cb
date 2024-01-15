@@ -79,16 +79,16 @@ const ContactSection = () => {
                         <div class="relative p-8 bg-white rounded-lg shadow-lg  sm:p-12">
                             <form action="https://formsubmit.co/contact@craftingbrain.com" method="POST" >
                                 <div class="mb-6">
-                                    <input type="text" placeholder="Your Name" class="border-stroke  text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none" />
+                                    <input type="text" placeholder="Your Name" name="name" class="border-stroke  text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none" />
                                 </div>
                                 <div class="mb-6">
-                                    <input type="email" placeholder="Your Email" class="border-stroke text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none" />
+                                    <input type="email" placeholder="Your Email" name="email" class="border-stroke text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none" />
                                 </div>
                                 <div class="mb-6">
-                                    <input type="text" placeholder="Your Phone" class="border-stroke  text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none" />
+                                    <input type="text" placeholder="Your Phone" name="phone" class="border-stroke  text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none" />
                                 </div>
                                 <div class="mb-6">
-                                    <textarea rows="6" placeholder="Your Message" class="border-stroke  text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"></textarea>
+                                    <textarea rows="6" placeholder="Your Message" name="text" class="border-stroke  text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"></textarea>
                                 </div>
                                 <div>
                                     <button type="submit" class="w-full p-3 text-white transition border rounded border-primary bg-blue-600 hover:bg-opacity-90">
