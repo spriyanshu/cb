@@ -44,7 +44,7 @@ const Header = () => {
                     <ScrollLink to="mentors" smooth={true} duration={1200} style={{ cursor: 'pointer' }}>Our Mentors</ScrollLink>
                     <ScrollLink to="contacts" smooth={true} duration={1200} style={{ cursor: 'pointer' }}>Contacts</ScrollLink>
                     <ScrollLink to="courses" smooth={true} duration={1200} style={{ cursor: 'pointer' }}>Courses</ScrollLink>
-                    <Link to="/signin" className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-black rounded-full" role="button">Join Now</Link>
+                    <Link to="/" className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-black rounded-full" role="button">Join Now</Link>
                 </div>
 
                 {/* Mobile Menu */}
