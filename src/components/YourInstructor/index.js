@@ -1,9 +1,9 @@
 import React from 'react';
 // import instructor from '/public/instructor.png';
 const statItems = [
-    { value: '5K+', label: 'STUDENTS TAUGHT' },
-    { value: '4y+', label: 'Teaching Experience' },
-    { value: '4k', label: 'STUDENTS PLACED' },
+    { value: '1000+', label: 'STUDENTS TAUGHT' },
+    { value: '4y+', label: 'Experience' },
+    // { value: '4k', label: 'STUDENTS PLACED' },
 ];
 
 const InstructorSection = () => {
@@ -19,7 +19,7 @@ const InstructorSection = () => {
                             Hey 👋 I am Aman
                         </h2>
                         <p className="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">
-                            Aman NSUT, Instructor at Grate Learning, 300k+ on Youtube.
+                        Introducing Aman, a seasoned Data Scientist and Corporate Trainer with over 4 years of expertise. Renowned for training 1000+ students at premier edtech giants like Great Learning and Upgrad, Aman boasts a stellar 4.8+ rating. His comprehensive knowledge and engaging teaching style make him a sought-after professional in the field. Elevate your learning experience with Aman, as he brings real-world insights and practical skills to the forefront. Uncover the world of data science through the lens
                         </p>
                         <div className="py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl ">
                             <div className="grid grid-cols-2 row-gap-8 md:grid-cols-4">
